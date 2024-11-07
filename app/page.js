@@ -85,13 +85,22 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full mt-4 1g:mt-0 1g: w-1/2">
-          <img
+          {/* <img
             src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
             alt="tailwind css
 components"
             className="w-full h-full max-w-md mx-auto"
-          />
-        </div>
+          />*/}
+       
+
+        <Image
+    src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
+    alt="tailwind css components"
+    width={500}      // Specify the width and height in pixels (or suitable values for your layout)
+    height={500}
+    className="w-full h-full max-w-md mx-auto"
+  />
+ </div> 
       </section>
 
       <section>
@@ -192,11 +201,18 @@ components"
               dedication to quality made our project a huge success."
             </p>
             <div className="mt-6 flex items-center">
-              <img
+            <Image
+    src="https://randomuser.me/api/portraits/men/32.jpg"
+    alt="Client 1"
+    width={500}      // Specify the width and height in pixels (or suitable values for your layout)
+    height={500}
+    className="h-12 w-12 rounded-full object-cover"
+  />
+              {/* <img
                 className="h-12 w-12 rounded-full object-cover"
                 src="https://randomuser.me/api/portraits/men/32.jpg"
                 alt="Client 1"
-              />
+              /> */}
               <div className="ml-4">
                 <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                   John Doe
